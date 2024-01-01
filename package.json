@@ -1,16 +1,16 @@
 {
-  "name": "cali.so",
+  "name": "dashu.ai",
   "version": "0.1.0",
   "private": true,
   "scripts": {
+    "dev": "next dev",
     "build": "next build",
+    "start": "next start",
     "db:generate": "drizzle-kit generate:mysql",
     "db:push": "drizzle-kit push:mysql",
-    "dev": "next dev",
     "dev:email": "email dev -p 3333",
     "dev:turbo": "next dev --turbo",
-    "lint": "next lint",
-    "start": "next start"
+    "lint": "next lint"
   },
   "dependencies": {
     "@clerk/nextjs": "^4.21.10",
@@ -54,6 +54,7 @@
     "dayjs": "^1.11.8",
     "dotenv": "^16.3.1",
     "drizzle-orm": "^0.27.0",
+    "easymde": "2",
     "edge-cors": "^0.2.1",
     "framer-motion": "^10.12.17",
     "hashids": "^2.3.0",
@@ -76,6 +77,8 @@
     "resend": "^0.15.3",
     "rss": "^1.2.2",
     "sanity": "^3.12.2",
+    "sanity-plugin-markdown": "^4.1.0",
+    "sanity-plugin-markdown-next": "^1.0.0",
     "sanity-plugin-media": "^2.0.5",
     "styled-components": "6",
     "valtio": "^1.10.6",

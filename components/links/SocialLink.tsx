@@ -13,6 +13,9 @@ import {
   TelegramIcon,
   TwitterIcon,
   YouTubeIcon,
+  WechatIcon,
+  RssIcon,
+  DiscordIcon
 } from '~/assets'
 import { Tooltip } from '~/components/ui/Tooltip'
 
@@ -24,6 +27,8 @@ type Platform =
   | 'telegram'
   | 'bilibili'
   | 'mail'
+  | 'wechat'
+  | 'discord'
   | 'rss'
 type PlatformInfo = {
   icon: IconType
@@ -52,8 +57,14 @@ const iconMapper: { [key: string]: PlatformInfo } = {
     platform: 'bilibili',
     label: '哔哩哔哩',
   },
-  '(?:mailto:)': { icon: MailIcon, platform: 'mail', label: '邮箱地址' },
-  '(?:feed.xml)': { icon: AtomIcon, platform: 'rss', label: 'RSS 订阅' },
+  '(?:discord.gg)': {
+    icon: DiscordIcon,
+    platform: 'discord',
+    label: 'discord',
+  },
+  '(?:weixin.qq.com)':{icon: WechatIcon, platform: 'wechat', label: 'Wechat'},
+  '(?:mailto:)': { icon: MailIcon, platform: 'mail', label: 'Mail' },
+  '(?:feed.xml)': { icon: RssIcon, platform: 'rss', label: 'RSS 订阅' },
 }
 
 function getIconForUrl(url: string): PlatformInfo | undefined {

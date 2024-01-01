@@ -9,6 +9,7 @@ import { deskTool } from 'sanity/desk'
 import { media } from 'sanity-plugin-media'
 
 import { settingsPlugin, settingsStructure } from '~/sanity/plugins/settings'
+import { markdownSchema } from "sanity-plugin-markdown";
 
 // Go to https://www.sanity.io/docs/api-versioning to learn how API versioning works
 import { apiVersion, dataset, projectId } from './sanity/env'
@@ -22,6 +23,7 @@ export default defineConfig({
   // Add and edit the content schema in the './sanity/schema' folder
   schema,
   plugins: [
+    markdownSchema(),
     deskTool({
       structure: settingsStructure(settingsType),
     }),

@@ -14,11 +14,11 @@ import { seo } from '~/lib/seo'
 export const metadata: Metadata = {
   metadataBase: seo.url,
   title: {
-    template: '%s | Cali Castle',
+    template: '%s | dashu.ai',
     default: seo.title,
   },
   description: seo.description,
-  keywords: 'Cali,Cali Castle,郭晓楠,佐玩,创始人,CEO,开发者,设计师,细节控,创新',
+  keywords: 'DaShuai,dashu.ai,大帅,ezshine,上海募合信息技术,创始人,CEO,开发者,设计师,细节控,创新,创业,indie hacker,creative developer',
   themeColor: [
     { media: '(prefers-color-scheme: dark)', color: '#000212' },
     { media: '(prefers-color-scheme: light)', color: '#fafafa' },
@@ -38,17 +38,17 @@ export const metadata: Metadata = {
   openGraph: {
     title: {
       default: seo.title,
-      template: '%s | Cali Castle',
+      template: '%s | dashu.ai',
     },
     description: seo.description,
-    siteName: 'Cali Castle',
+    siteName: 'dashu.ai',
     locale: 'zh_CN',
     type: 'website',
-    url: 'https://cali.so',
+    url: 'https://dashu.ai',
   },
   twitter: {
-    site: '@thecalicastle',
-    creator: '@thecalicastle',
+    site: '@ezshine',
+    creator: '@ezshine',
     card: 'summary_large_image',
     title: seo.title,
     description: seo.description,

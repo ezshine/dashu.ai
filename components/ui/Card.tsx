@@ -31,7 +31,7 @@ export function Card({
 }) {
   return (
     <Component
-      className={clsxm(className, 'group relative flex flex-col items-start')}
+      className={clsxm(className, 'mr-6 group relative flex flex-col items-start')}
       {...props}
     >
       {children}
