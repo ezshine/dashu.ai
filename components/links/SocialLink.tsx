@@ -5,7 +5,6 @@ import Link, { type LinkProps } from 'next/link'
 import React from 'react'
 
 import {
-  AtomIcon,
   BilibiliIcon,
   GitHubIcon,
   type IconProps,

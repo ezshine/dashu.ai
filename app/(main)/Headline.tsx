@@ -2,7 +2,6 @@
 
 import { motion } from 'framer-motion'
 
-import { SparkleIcon, UFOIcon } from '~/assets'
 import { SocialLink } from '~/components/links/SocialLink'
 
 function Developer() {
@@ -25,24 +24,6 @@ function Designer() {
         <span className="absolute -right-0.5 -top-0.5 h-1.5 w-1.5 border border-lime-700 bg-zinc-50 dark:border-lime-400" />
       </span>
       大帅
-    </span>
-  )
-}
-
-function OCD() {
-  return (
-    <span className="group">
-      <SparkleIcon className="mr-1 inline-flex transform-gpu transition-transform duration-500 group-hover:rotate-180" />
-      <span>细节控</span>
-    </span>
-  )
-}
-
-function Founder() {
-  return (
-    <span className="group">
-      <UFOIcon className="mr-1 inline-flex group-hover:fill-zinc-600/20 dark:group-hover:fill-zinc-200/20" />
-      <span>硬地骇客</span>
     </span>
   )
 }
